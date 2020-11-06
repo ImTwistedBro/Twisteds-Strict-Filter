@@ -601,7 +601,7 @@ ItemDisplay[MAG !ID ILVL>49 (ulc OR uvc OR umc)]: %NAME%%MAP-97% // Possible Wha
 ItemDisplay[MAG !ID GLOVES]: %NAME%%MAP-97% // All gloves
 ItemDisplay[MAG !ID uit]: %NAME%%MAP-97% // Monarch, possible JMOD
 ItemDisplay[MAG !ID CLVL<40]: %NAME%%MAP-97% // Notify for all magics until level 39
-ItemDisplay[MAG !ID CLVL>39]: //%NAME% // At level 40+, stop showing and notifying for all magics, and only show/notify for the ones uncommented above. Uncomment %NAME% in this line to show all magics
+ItemDisplay[MAG !ID CLVL>19]: //%NAME% // At level 20+, stop showing and notifying for all magics, and only show/notify for the ones uncommented above. Uncomment %NAME% in this line to show all magics
 
 // Gold
 ItemDisplay[GOLD<5000]: // Hide 5000 gold and less
