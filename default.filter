@@ -10,7 +10,7 @@
 // |     Thanks to @WolfieeifloW#6431 for the base filters                      |
 // |     Thanks to @Sawyer#5623 for reference material                          |
 // |                                                                            |
-// |     Last updated: 06/11/2020                                               |
+// |     Last updated: 08/11/2020                                               |
 // |                                                                            |
 // +----------------------------------------------------------------------------+
 
@@ -78,20 +78,20 @@ ItemDisplay[t18]: %NAME% [T8]%MAP-87% // Lava Map
 ItemDisplay[GEM=1 CLVL>1]: // Hide all Chipped gems when below X character level
 ItemDisplay[GEM=2 CLVL>1]: // Hide all Flawed gems when below X character level
 ItemDisplay[GEM=3 CLVL>1]: // Hide all Normal gems when below X character level
-ItemDisplay[GEM=4 GEMTYPE=1]: %NAME%{%TAN%3 Flawless Amethyst + Key = Perfect Amethyst} // Flawless Amethyst
-ItemDisplay[GEM=5 GEMTYPE=1]: %NAME%%DOT-20%{%TAN%Used in Caster crafting} // Perfect Amethyst
-ItemDisplay[GEM=4 GEMTYPE=2]: %NAME%{%TAN%3 Flawless Diamond + Key = Perfect Diamond} // Flawless Diamond
-ItemDisplay[GEM=5 GEMTYPE=2]: %NAME%%DOT-20% // Perfect Diamond
-ItemDisplay[GEM=4 GEMTYPE=3]: %NAME%{%TAN%3 Flawless Emerald + Key = Perfect Emerald} // Flawless Emerald
-ItemDisplay[GEM=5 GEMTYPE=3]: %NAME%%DOT-20%{%TAN%Used in Safety crafting} // Perfect Emerald
-ItemDisplay[GEM=4 GEMTYPE=4]: %NAME%{%TAN%3 Flawless Ruby + Key = Perfect Ruby} // Flawless Ruby
-ItemDisplay[GEM=5 GEMTYPE=4]: %NAME%%DOT-20%{%TAN%Used in Blood crafting} // Perfect Ruby
-ItemDisplay[GEM=4 GEMTYPE=5]: %NAME%{%TAN%3 Flawless Sapphire + Key = Perfect Sapphire} // Flawless Sapphire
-ItemDisplay[GEM=5 GEMTYPE=5]: %NAME%%DOT-20%{%TAN%Used in Hit Power crafting} // Perfect Sapphire
-ItemDisplay[GEM=4 GEMTYPE=7]: %NAME%{%TAN%3 Flawless Skull + Key = Perfect Skull} // Flawless Skull
-ItemDisplay[GEM=5 GEMTYPE=7]: %NAME%%DOT-20% // Perfect Skull
-ItemDisplay[GEM=4 GEMTYPE=6]: %NAME%{%TAN%3 Flawless Topaz + Key = Perfect Topaz} // Flawless Topaz
-ItemDisplay[GEM=5 GEMTYPE=6]: %NAME%%DOT-20% // Perfect Topaz
+ItemDisplay[gzv OR gzvs]: %NAME%{%TAN%3 Flawless Amethyst + Key = Perfect Amethyst} // Flawless Amethyst
+ItemDisplay[gpv OR gpvs]: %NAME%%DOT-20%{%TAN%Used in Caster crafting} // Perfect Amethyst
+ItemDisplay[glw OR glws]: %NAME%{%TAN%3 Flawless Diamond + Key = Perfect Diamond} // Flawless Diamond
+ItemDisplay[gpw OR gpws]: %NAME%%DOT-20% // Perfect Diamond
+ItemDisplay[glg OR glgs]: %NAME%{%TAN%3 Flawless Emerald + Key = Perfect Emerald} // Flawless Emerald
+ItemDisplay[gpg OR gpgs]: %NAME%%DOT-20%{%TAN%Used in Safety crafting} // Perfect Emerald
+ItemDisplay[glr OR glrs]: %NAME%{%TAN%3 Flawless Ruby + Key = Perfect Ruby} // Flawless Ruby
+ItemDisplay[gpr OR gprs]: %NAME%%DOT-20%{%TAN%Used in Blood crafting} // Perfect Ruby
+ItemDisplay[glb OR glbs]: %NAME%{%TAN%3 Flawless Sapphire + Key = Perfect Sapphire} // Flawless Sapphire
+ItemDisplay[gpb OR gpbs]: %NAME%%DOT-20%{%TAN%Used in Hit Power crafting} // Perfect Sapphire
+ItemDisplay[skl OR skls]: %NAME%{%TAN%3 Flawless Skull + Key = Perfect Skull} // Flawless Skull
+ItemDisplay[skz OR skzs]: %NAME%%DOT-20% // Perfect Skull
+ItemDisplay[gly OR glys]: %NAME%{%TAN%3 Flawless Topaz + Key = Perfect Topaz} // Flawless Topaz
+ItemDisplay[gpy OR gpys]: %NAME%%DOT-20% // Perfect Topaz
 
 // Runes
 ItemDisplay[RUNE<11]: %DARK_GREEN%%RUNENAME% (%RUNENUM%)%DOT-76%%CONTINUE% // El-Thul
@@ -637,7 +637,8 @@ ItemDisplay[NMAG !INF !RW SUP !ETH SOCK=2 STAFF CLVL<20]: %GRAY%%NAME%{%ORANGE%L
 //ItemDisplay[NMAG !INF !RW !ETH SOCK=2 (clb OR spc) CLVL<40]: %GRAY%%NAME%%DOT-20%%PX-00% // 1-Handed Maces, 2os
 //ItemDisplay[NMAG !INF !RW !ETH SOCK=2 (hax OR axe OR 2ax OR mpi OR wax) CLVL<40]: %GRAY%%NAME%%DOT-20%%PX-00% // 1-Handed Axes, All Normal tiers 2os
 //ItemDisplay[NMAG !INF !RW !ETH SOCK=3 (axe OR 2ax OR mpi OR wax) CLVL<40]: %GRAY%%NAME%%DOT-20%%PX-00% // 1-Handed Axes, All Normal tiers 3os
-ItemDisplay[NMAG !INF !RW !ETH SOCK=3 kit CLVL<40]: %GRAY%%NAME%%DOT-1E%%PX-00% // Kite Shield, 3os
+ItemDisplay[NMAG !INF !RW !ETH SOCK=3 kit CLVL<99]: %GRAY%%NAME%%DOT-1E%%PX-00% // Kite Shield, 3os
+ItemDisplay[NMAG !INF !RW !ETH SOCK=2 kit CLVL<99]: %GRAY%%NAME%%DOT-1E%%PX-00% // Kite Shield, 2os
 ItemDisplay[NMAG !INF !RW !ETH SOCK=2 HELM CLVL<40]: %GRAY%%NAME%%DOT-20%%PX-00% // Helmets, All Normal tiers 2os
 ItemDisplay[NMAG !INF !RW !ETH SOCK=2 CHEST CLVL<40]: %GRAY%%NAME%%DOT-20%%PX-00% // Body Armors, Normal tier 2os
 
